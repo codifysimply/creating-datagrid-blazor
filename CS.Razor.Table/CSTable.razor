@@ -1,0 +1,47 @@
+﻿@inherits CSTableComponent<TItem>
+@typeparam TItem
+
+<div id="cs-table" style="width: @Width">
+
+    @{
+        <div id="cs-table-header">
+            <CascadingValue Value="@(new CSTableRow<TItem> { Table = this, IsHeader = true, Headers = headers})">
+                @ChildContent
+            </CascadingValue>
+        </div>
+    }
+
+    <div id="cs-table-body">
+        @{
+            if (ShowFiletr)
+            {
+                <div class="table-row">
+                    <CascadingValue Value="@(new CSTableRow<TItem> { Table = this, IsFilter= true})">
+                        @ChildContent
+                    </CascadingValue>
+                </div>
+            }
+
+            if (FilteredItems != null && FilteredItems.Count() > 0)
+            {
+                var index = 0;
+                foreach (var item in FilteredItems)
+                {
+                    <div class="table-row">
+                        <CascadingValue Value="@(new CSTableRow<TItem> { Table = this, IsHeader = false, RowIndex = index, RowData = item })">
+                            @ChildContent
+                        </CascadingValue>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="table-row">
+                    <div class="table-body-cell" style="border:none;">
+                        No result found
+                    </div>
+                </div>
+            }
+        }
+    </div>
+ </div>

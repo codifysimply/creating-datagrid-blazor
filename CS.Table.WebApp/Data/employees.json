@@ -1,0 +1,303 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "age": 35,
+    "gender": "male",
+    "isManager": true,
+    "designation": "Software Developer",
+    "department": "IT",
+    "salary": 75000,
+    "address": {
+      "id": 1,
+      "country": "UAE",
+      "city": "Dubai"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "age": 28,
+    "gender": "female",
+    "isManager": false,
+    "designation": "Business Analyst",
+    "department": "Marketing",
+    "salary": 60000,
+    "address": {
+      "id": 2,
+      "country": "USA",
+      "city": "Washington"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "age": 45,
+    "gender": "male",
+    "isManager": true,
+    "designation": "Project Manager",
+    "department": "IT",
+    "salary": 90000,
+    "address": {
+      "id": 3,
+      "country": "Ukraine",
+      "city": "Kiev"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "age": 32,
+    "gender": "female",
+    "isManager": false,
+    "designation": "UI/UX Designer",
+    "department": "Design",
+    "salary": 65000,
+    "address": {
+      "id": 4,
+      "country": "Turkey",
+      "city": "Ankara"
+    }
+  },
+  {
+    "id": 5,
+    "name": "David Lee",
+    "age": 38,
+    "gender": "male",
+    "isManager": true,
+    "designation": "Data Analyst",
+    "department": "IT",
+    "salary": 80000,
+    "address": {
+      "id": 5,
+      "country": "Saudi Arabia",
+      "city": "Riyadh"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Julia Martin",
+    "age": 29,
+    "gender": "female",
+    "isManager": true,
+    "designation": "Marketing Manager",
+    "department": "Marketing",
+    "salary": 75000,
+    "address": {
+      "id": 6,
+      "country": "Russia",
+      "city": "Moscow"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Adam Clark",
+    "age": 41,
+    "gender": "male",
+    "isManager": false,
+    "designation": "Sales Manager",
+    "department": "Sales",
+    "salary": 95000,
+    "address": {
+      "id": 7,
+      "country": "Slovenia",
+      "city": "Ljubljana"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Laura Wilson",
+    "age": 27,
+    "gender": "female",
+    "isManager": true,
+    "designation": "Graphic Designer",
+    "department": "Design",
+    "salary": 55000,
+    "address": {
+      "id": 8,
+      "country": "Spain",
+      "city": "Madrid"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Peter Harris",
+    "age": 36,
+    "gender": "male",
+    "isManager": true,
+    "designation": "Software Developer",
+    "department": "IT",
+    "salary": 85000,
+    "address": {
+      "id": 9,
+      "country": "Brazil",
+      "city": "Brasilia"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Jessica Lee",
+    "age": 31,
+    "gender": "female",
+    "isManager": false,
+    "designation": "HR Manager",
+    "department": "HR",
+    "salary": 70000,
+    "address": {
+      "id": 10,
+      "country": "China",
+      "city": "Beijing"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Mark Brown",
+    "age": 40,
+    "gender": "male",
+    "isManager": false,
+    "designation": "Technical Lead",
+    "department": "IT",
+    "salary": 95000,
+    "address": {
+      "id": 11,
+      "country": "Comoros",
+      "city": "Moroni"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Emma White",
+    "age": 26,
+    "gender": "female",
+    "isManager": true,
+    "designation": "Content Writer",
+    "department": "Marketing",
+    "salary": 55000,
+    "address": {
+      "id": 12,
+      "country": "Croatia",
+      "city": "Zagreb"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Alex Johnson",
+    "age": 33,
+    "gender": "male",
+    "isManager": true,
+    "designation": "Database Administrator",
+    "department": "IT",
+    "salary": 80000,
+    "address": {
+      "id": 13,
+      "country": "Cuba",
+      "city": "Havana"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Olivia Davis",
+    "age": 30,
+    "gender": "female",
+    "isManager": true,
+    "designation": "Content Writer",
+    "department": "Marketing",
+    "salary": 50000,
+    "address": {
+      "id": 14,
+      "country": "Denmark",
+      "city": "Copenhagen"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Harish Gowda",
+    "age": 32,
+    "gender": "male",
+    "isManager": false,
+    "designation": "Developer",
+    "department": "IT",
+    "salary": 55000,
+    "address": {
+      "id": 15,
+      "country": "Egypt",
+      "city": "Cairo"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Mark Lewis",
+    "age": 35,
+    "gender": "male",
+    "isManager": true,
+    "designation": "Graphic Designer",
+    "department": "Design",
+    "salary": 56000,
+    "address": {
+      "id": 16,
+      "country": "Italy",
+      "city": "Rome"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Jane Perry",
+    "age": 28,
+    "gender": "female",
+    "isManager": false,
+    "designation": "Developer",
+    "department": "IT",
+    "salary": 45000,
+    "address": {
+      "id": 17,
+      "country": "Jordan",
+      "city": "Amman"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Menaka KY",
+    "age": 25,
+    "gender": "female",
+    "isManager": true,
+    "designation": "Database Administrator",
+    "department": "IT",
+    "salary": 45000,
+    "address": {
+      "id": 18,
+      "country": "Kuwait",
+      "city": "Kuwait"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Shanvi Harish",
+    "age": 23,
+    "gender": "female",
+    "isManager": false,
+    "designation": "UI/UX Designer",
+    "department": "Design",
+    "salary": 35000,
+    "address": {
+      "id": 19,
+      "country": "Qatar",
+      "city": "Doha"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Tim David",
+    "age": 35,
+    "gender": "male",
+    "isManager": true,
+    "designation": "Technical Lead",
+    "department": "IT",
+    "salary": 55000,
+    "address": {
+      "id": 20,
+      "country": "Mexico",
+      "city": "Mexico"
+    }
+  }
+	
+]

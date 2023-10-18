@@ -1,0 +1,54 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<br />
+<h3>Create reusable Blazor DataGrid Component</h3>
+<br />
+
+<div class="container">
+    <CSTable Items="employees" TItem="Employee" ShowFiletr="true"> 
+        <CSTableColumn Value="(Employee v) => v.Id" Width="10%"></CSTableColumn>
+        <CSTableColumn Value="(Employee v) => v.Name" Align="left"></CSTableColumn>
+        <CSTableColumn Value="(Employee v) => v.Department"></CSTableColumn>
+        <CSTableColumn Value="(Employee v) => v.Designation"></CSTableColumn>
+        <CSTableColumn Value="(Employee v) => v.Age" Width="10%" Align="center"></CSTableColumn>
+        <CSTableColumn Value="(Employee v) => v.IsManager" Header="Manager" Align="center"></CSTableColumn>
+        <CSTableColumn Value="(Employee v) => v.Salary" Format="C2" Align="right"></CSTableColumn>
+        <CSTableColumn Value="(Employee v) => v.Address" Align="right">
+            @context.Address?.Country, @context.Address?.City
+        </CSTableColumn>
+    </CSTable>
+</div>
+
+@code{
+    List<Employee> employees = null;
+
+    protected override void OnInitialized()
+    {
+        var json = File.ReadAllText(@"./Data/employees.json");
+        employees = JsonSerializer.Deserialize<List<Employee>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+    }
+
+
+    public class Employee
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Gender { get; set; }
+        public string Designation { get; set; }
+        public string Department { get; set; }
+        public decimal Salary { get; set; }
+        public bool IsManager { get; set; }
+        public Address Address { get; set; }
+    }
+
+    public class Address
+    {
+        public int Id { get; set; }
+        public string Country { get; set; }
+        public string City { get; set; }
+
+    }
+}

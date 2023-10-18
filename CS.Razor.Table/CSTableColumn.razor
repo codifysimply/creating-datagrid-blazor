@@ -1,0 +1,62 @@
+﻿@inherits CSTableColumnComponent<TItem,TValue>
+@typeparam TItem
+@typeparam TValue
+
+@if (IsHeader)
+{
+    <div class="table-header-cell" style="@align @width" @onclick="SortAsync">
+        <span class="header-name">@ColumnHeader</span>
+        <span class="icon" style="display:block;">
+            <i id="@ColumnHeader" class=""></i>
+        </span>
+    </div>
+}
+else if (IsFilter)
+{
+    <div class="table-header-cell" style="@align @width padding:0px;">
+        <div class="search-container">
+            <label class="table-header-dd">
+                <span class="table-header-dd-btn">
+                    @if (filter.FilterOperator != FilterOperator.Default)
+                    {
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="operator">@Operator</i></span>
+                    }
+                    else
+                    {
+                        <span><i class="fas fa-filter"></i></span>
+                    }
+                </span>
+                <input type="checkbox" class="table-header-dd-input" id="dd" disabled="@IsFilterDisabled">
+                <ul class="table-header-dd-menu">
+                    @foreach (var kvp in dropdownOperators)
+                    {
+                        <li @onclick="@(()=>SetFilterOperator(kvp.Key))">@kvp.Value</li>
+                    }
+                    <li @onclick="@(()=>SetFilterOperator(FilterOperator.Default))">Reset</li>
+                </ul>
+            </label>
+
+            <input class="form-control no-border"
+            @bind-value="filter.SearchTerm"
+            @bind-value:event="oninput" @onchange="@FilterColum"
+                   disabled="@IsFilterDisabled"
+                   Placeholder="@( IsFilterDisabled ? "Filter disabled" : $"Search in {ColumnHeader}")" />
+        </div>
+    </div>
+}
+else
+{
+    if (HasChild)
+    {
+        <div class="table-body-cell" style="@align @width">
+            @ChildContent(TableRow.RowData)
+        </div>
+    }
+    else
+    {
+        <div class="table-body-cell" style="@align @width">
+            @ColumnValue
+        </div>
+    }
+}
